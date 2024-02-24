@@ -1,0 +1,371 @@
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+* {
+    font-family: Bahnschrift, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #01579b;
+    position: relative;
+}
+
+#sti-logo {
+    width: 90px;
+    height: 60px;
+    padding: 15px 0px 0px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-txt {
+    color: #FFFF;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    background-image: url(../Kiosk/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    border:3px outset;
+    box-shadow: -4px 3px 4px rgba(0, 0, 0, 0.49);
+}
+
+.filter-container {
+    width: 200px;
+    height: 675px;
+    color: #ffff;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    background-color: #2c384a;
+}
+
+.checkbox-container {
+    height: 25px;
+    font-weight: lighter;
+    font-size: 19px;
+}
+
+#apply-btn {
+    width: 80px;
+    font-size: 1.2rem;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.date-container input {
+    height: 20px;
+    font-size: 1.1rem;
+    width: 70px;
+    text-align: center;
+}
+
+#clear-btn {
+    font-size: 1.1rem;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.status {
+    font-size: 1.4rem;
+    color: #ffff;
+    line-height: 80px;
+    padding-right: 10px;
+}
+
+.searchbar-wrapper {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#searchbar {
+    width: 500px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 3px 0px 0px 3px;
+    font-size: 22px;
+    border: 0;
+    outline: none;
+}
+
+.search-ic {
+    width: 50px;
+    height: 60px;
+    color: #ffff;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0px 3px 3px 0px;
+    background-color: #01579b;
+}
+
+.scan-wrapper {
+    height: fit-content;
+    margin-right: 50px;
+    margin-top: 25px;
+    background-color: #01579b;
+    border-radius: 5px;
+}
+
+#scanner-ic {
+    width: 60px;
+}
+
+.books-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ffff;    
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.books-iframe {
+    width: 80vw;
+    height: 70vh;
+    position: absolute;
+    left: 15%;
+    right: 0;
+    top: 1;
+    bottom: 0;
+    margin: auto;
+    color: #ffff;    
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.book {
+    text-align: center;
+}
+
+.book-cover {
+    height: 270px;
+    width: 215px;
+    border-radius: 3%;
+}
+
+.book h4,
+.book h5 {
+    width: 250px;
+    font-size: 1.3rem;
+}
+
+.shelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.display-book {    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    width: 950px;
+    height: 650px;
+    background-color: #eae7e7;
+    z-index: 3;
+}
+
+.blur-bg {
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.displaybook-flex {
+    display: flex;
+    align-items: center;
+    width: 950px;
+    height: 650px;
+}
+
+.displaybook-cover {
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.book-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#2c384a;
+    color: #FFFF;
+    height: 550px;
+    width: 450px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.book-info-container h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.book-info-container h3 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-top: 0;
+    text-align: center;
+}
+
+.displaybook-btn-styling {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    align-self: center;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    box-shadow: -4px 3px 4px rgba(0, 0, 0, 0.3);
+    background-color: #01579b;
+}
+
+.borrow-book-login {
+    width: 400px;
+    height: 500px;
+    background-color: #eae7e7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-styling {
+    padding: 20px;
+    font-size: 27px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.h2-styling {
+    text-align: center;
+    font-weight: 100;
+}
+
+.p-styling {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.scan-barcode {
+    width: 400px;
+    height: 500px;
+    background-color: #eae7e7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes popIn {
+    0% {
+        scale: 0;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes popInReverse {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 0;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideUp {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
