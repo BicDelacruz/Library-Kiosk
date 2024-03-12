@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87d00568d5.js" crossorigin="anonymous"></script>
+    <title>Library Kiosk</title>
+</head>
+
+<body>
+    <div class="background">
+    </div>
+    <header>
+        <img id="sti-logo" src="img/STI.png" alt="STI Logo">
+
+        <div class="header-txt title">
+            Library Assistant Kiosk
+        </div>
+
+        <div class="header-txt subtitle">
+            by STEM - 302 & MAWD - 301 A.Y 2023 - 2024
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="filter-container">
+                    <h3 style="height: 1px; font-size: 1.9rem;">Filters</h3>
+
+                    <div class="category-container">
+
+                        <h4 style="height: 5px; font-size: 1.4rem;">Category</h4>
+
+                        <div class="checkbox-container">
+                            <input id="fict-chbx" type="checkbox">
+                            <label for="fict-chbx">Fiction</label>
+                        </div>
+                        
+                        <div class="checkbox-container">
+                            <input id="nonfic-chbx" type="checkbox">
+                            <label for="nonfic-chbx">Non-Fiction</label>
+                        </div>
+                        
+                        <div class="checkbox-container">
+                            <input id="circul-chbx" type="checkbox">
+                            <label for="circul-chbx">Circulation</label>
+                        </div>
+
+                        <div class="checkbox-container">
+                            <input id="refer-chbx" type="checkbox">
+                            <label for="refer-chbx">Reference</label>
+                        </div>
+
+                        <div class="checkbox-container">
+                            <input id="shs-chbx" type="checkbox">
+                            <label for="shs-chbx">Senior High School</label>
+                        </div>
+
+                    </div>
+
+                    <div class="langfilter-container">
+                        <h4 style="height: 5px; font-size: 1.4rem;">Language</h4>
+
+                        <div class="checkbox-container">
+                            <input id="eng-chbx" type="checkbox">
+                            <label for="eng-chbx">English</label>
+                        </div>
+
+                        <div class="checkbox-container">
+                            <input id="fil-chbx" type="checkbox">
+                            <label for="fil-chbx">Filipino</label>
+                        </div>
+                    </div>
+
+                    <div class="date-container">
+                        <h4 style="height: 6px; font-size: 1.4rem;">Year Published </h4>
+                        <input id="from-input" type="number">
+                        -
+                        <input id="to-input" type="number">
+                        <button id="apply-btn">Apply</button>  
+                    </div>
+
+                    <div>
+                        <button id="clear-btn">Clear Filters</button>
+                    </div>
+
+                </div>
+
+                <div class="status">
+                    <h2 class="status-txt">Available Right Now</h2>
+                </div>
+
+                <div class="searchbar-wrapper">
+                    <input id="searchbar" type="search" placeholder="Search Book Title, Author or Publisher">
+                    <div class="search-ic">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="scan-wrapper">
+                    <img id="scanner-ic" src="img/scan-icon.png" alt="scanner icon">
+                </div>
+            </div>
+        </nav>
+              
+        <iframe class="books-iframe" src="books.html" frameborder="0"></iframe>
+
+    </main>
+
+
+    <script src="main.js">
+        
+    </script>
+
+</body>
+
+</html>
